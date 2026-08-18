@@ -8,15 +8,14 @@
 }
 
 :root {
-  --primary: #1e293b;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --bg-light: #f8fafc;
-  --text-dark: #0f172a;
-  --text-muted: #64748b;
+  --primary: #143628;        /* Verde oscuro profundo para la barra lateral y títulos */
+  --accent: #16a34a;         /* Verde vibrante para botones, íconos y enlaces */
+  --accent-hover: #15803d;   /* Verde más oscuro para cuando pases el mouse */
+  --bg-light: #f4f7f5;       /* Fondo claro con un leve tinte verde/gris */
+  --text-dark: #0f172a;      /* Texto principal */
+  --text-muted: #64748b;     /* Texto secundario */
   --white: #ffffff;
 }
-
 body {
   background-color: var(--bg-light);
   color: var(--text-dark);
