@@ -16,6 +16,7 @@
   --text-muted: #64748b;     /* Texto secundario */
   --white: #ffffff;
 }
+
 body {
   background-color: var(--bg-light);
   color: var(--text-dark);
@@ -349,13 +350,66 @@ body {
   font-size: 0.9rem;
 }
 
-/* Adaptabilidad para Celulares */
+/* Adaptabilidad para Celulares y Tablets */
 @media (max-width: 768px) {
-  .dashboard-container { flex-direction: column; }
-  .sidebar { width: 100%; height: auto; position: relative; }
-  .main-content { margin-left: 0; }
-  .content-section { padding: 2rem 1.5rem; }
-  .video-frame-container iframe { width: 100%; height: auto; aspect-ratio: 4/3; }
+  .dashboard-container { 
+    flex-direction: column; 
+  }
+  
+  .sidebar { 
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+    padding: 1.5rem 1rem;
+  }
+  
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .nav-links a:hover, .nav-links a.active {
+    transform: none;
+  }
+
+  .main-content { 
+    margin-left: 0; 
+  }
+
+  .content-section { 
+    padding: 2rem 1.2rem; 
+  }
+
+  .hero-section {
+    height: 50vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .video-frame-container iframe { 
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 4 / 3; 
+  }
+
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .team-table {
+    min-width: 500px;
+  }
 }
 
 /* Estilos para animación Fade-In controlada por JS */
